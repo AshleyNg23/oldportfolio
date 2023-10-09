@@ -1,0 +1,384 @@
+@font-face {
+    font-family: MagicRetro;
+    src: url(Magic_Retro.ttf);
+  }
+
+@keyframes fadeIn {  
+    from {  
+        opacity:0;  
+    }  
+ 
+    to {  
+        opacity:1;  
+    }  
+ }
+
+h1 {
+    font-family: MagicRetro;
+    color:#F6EFA2;
+    font-weight: 400;
+    font-size: 128px;
+    z-index: 50;
+
+    animation: fadeIn 1s ease-in; 
+}
+
+h2 {
+    font-family: MagicRetro;
+    color:#ffffff;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 30px;
+}
+
+h3 {
+    font-family: MagicRetro;
+    color:#ffffff;
+    font-weight: 300;
+    font-size: 70px;
+    line-height: 60px;
+}
+
+h4 {
+    font-family: MagicRetro;
+    color: #fff;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 40px;
+    padding-left: 37%;
+    padding-right: 17%;
+    transition: 0.3s;
+}
+
+h5 {
+    font-family: MagicRetro;
+    color: #fff;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 40px;
+    padding-left: 30%;
+    padding-right: 20%;
+    transition: 0.3s;
+}
+
+h6 {
+    font-family: MagicRetro;
+    color:#ffffff;
+    font-weight: 300;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+p {
+    font-family: Abhaya Libre;
+    color:#ffffff;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+body {
+    background: linear-gradient(#011633, #033972, #0AAEEC);
+    background-repeat: no-repeat;
+    background-size:100% auto;
+    color:#00000000
+}
+
+img {
+    width: 100%; /* or any custom size */
+    height: 100%; 
+    object-fit: contain;
+}
+
+a {
+    color: #FFF;
+}
+
+.headerDiv {
+    text-align: center;
+    width: 70%;
+    height: fit-content;
+    margin: auto;
+}
+
+.aboutInfo {
+    top: 0; 
+    left: 0; 
+    position: absolute;
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+    background-image: url("backgroundAll.png");
+    background-size:100% auto;
+    background-repeat: no-repeat;
+    animation: fadeIn 1s ease-in; 
+}
+
+.emptySmall {
+    margin-top: 400px;
+}
+
+.navBar {
+    padding: 0px 0px;
+    margin-top: 0px;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+  
+.tabBox {
+    background: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tabBox .tabBtn {
+    font-size: 70px;
+    font-weight: 400;
+    color: #FFF;
+    background: none;
+    border: none;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    font-family: "MagicRetro";
+    animation: fadeIn 1.5s ease-in; 
+}
+
+.tabBox .tabBtn:hover {
+    color:#f9d6e3;
+}
+
+.centerDiv {
+    width: 50%;
+    margin: auto;
+}
+
+.profilePicture {
+    padding-top: 160px;
+    max-width: 400px;
+    max-height: 400px;
+    width: 100%;
+    margin: auto;
+}
+
+.pDesc {
+    margin: 40px;
+    padding: 30px;
+    background-color: #00095078;
+    border-radius: 10px;
+}
+
+.moreInfo {
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 5%;
+    width: 70%;
+    margin: auto;
+  }
+
+.infoItem {
+    height: auto;
+    width: 100%;
+}
+
+.cloudSpacer {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 5%;
+    width: 100%;
+    margin: none;
+}
+
+.cloudImgLeft {
+    max-width: 900px;
+    overflow: hidden;
+    margin: 0px 0px 0px -60%; 
+}
+
+.cloudImgRight {
+    max-width: 900px;
+    overflow: hidden;
+    margin: none; 
+}
+
+.projectHeader {
+    width: 70%;
+    height: 100px;
+    margin: auto;
+    border-radius: 91px;
+    border: #FFEFFC solid 5px;
+    background-image: linear-gradient(rgba(217, 217, 217, 0), rgba(217, 217, 217, 0), rgba(255, 162, 238, 0.49) );
+}
+
+.projectbutton {
+    width: 70%;
+    height: 100px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 91px;
+    border: #FFEFFC solid 5px;
+    background-image: linear-gradient(rgba(217, 217, 217, 0), rgba(217, 217, 217, 0), rgba(255, 162, 238, 0.49) );
+}
+
+.experienceSection {
+    position: relative;
+    margin-top: 3100px;
+    min-width: 100%;
+    min-height: 100%;
+    background-size:100% auto;
+    background-repeat: no-repeat;
+    background-image: url("pinkFog.png");
+}
+
+.experienceSection img {
+    /* Preserve aspet ratio */
+    z-index: 10;
+}
+
+.backgroundFog {
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    z-index: 10;
+}
+.positionGrid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-column-gap: 10%;
+    width: 100%;
+    margin: none;
+    padding-top: 100px;
+}
+
+.positionInfo {
+    position: relative;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.positionLogo {
+    position: absolute;
+    max-width: 350px;
+    max-height: 350px;
+    height: fit-content;
+    margin-left: -20%;
+    z-index: 20;
+    transition: 0.6s;
+}
+
+.positionLogo:hover {
+    opacity: 0;
+    color: #FFF;
+}
+
+.positionCloudFrame {
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    z-index: 30;
+    transition: 0.3s;
+    color: rgba(255, 255, 255, 0);
+}
+
+.positionCloudFrame:hover {
+    transition: 0.3s;
+    opacity: 0;
+    color: #FFF;
+}
+
+.positionInfoSolo {
+    position: relative;
+    padding: 20px;
+    padding-right: 50px;
+    padding-top: 100px;
+}
+
+.positionCloudFrameSolo {
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    z-index: 30;
+}
+
+.positionCloudFrameSolo:hover {
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.otherLinkGallery {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 5%;
+    width: 100%;
+    margin: none;
+    padding-bottom: 200px;
+}
+
+.linkButton {
+    width: 100%;
+    z-index: 100;
+}
+
+.websiteDiv {
+    width: 100%;
+    height: fit-content;
+}
+
+.projectBG {
+    width: 60%;
+    margin: auto;
+    background-color: #00095078;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.projectGallery {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-column-gap: 150px;
+    grid-row-gap: 150px;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.projectItem {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.projectItem img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.projectItem p {
+    padding: 10%;
+}
+
+.projectItem img:hover {
+    transition: 0.6s;
+    opacity: 0;
+}
+
+.projectPage {
+    margin-top: 3400px;
+    background-image: url(pinkFog.png);
+    background-repeat: no-repeat;
+    background-size:100% auto;
+}
+
+.websiteButton {
+    width: 40%;
+    height: 50px;
+    margin: auto;
+    border-radius: 91px;
+    border: #FFEFFC solid 3px;
+    background-image: linear-gradient(rgba(217, 217, 217, 0), rgba(217, 217, 217, 0), rgba(255, 162, 238, 0.49) );
+}
