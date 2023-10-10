@@ -70,25 +70,25 @@
             </a>
         </div>
     </div>
+    <div class="blankDiv"></div>
     <div class="experienceSection">
         <h3 align="center">Experience</h3>
         <div class="positionGrid">
             <div class="positionInfo">
-                <center><img class="positionLogo" src="assets\logos\ASH logo.png" alt="ASH Logo"></center>
-                <h4 align="center" id="position1">Historian & Social Media Chair <br> Fall 2022 - Present </h4>
+                <img class="positionLogo" src="assets\logos\ASH logo.png" alt="ASH Logo">
                 <img class="positionCloudFrame" src="assets\backgroundImgs\leftCloudBorder.png" alt="Frame of Clouds">
+                <h4 align="center" id="position1">Historian & Social Media Chair <br> Fall 2022 - Present </h4>
             </div>
             <div class="positionInfo">
-                <center><img class="positionLogo" src="assets\logos\hack-at-uci-logo_white.svg" alt="HACK at UCI Logo"></center>
-                <h4 align="center">Graphics Organizer <br> Spring 2023 - Present </h4>
+                <img class="positionLogo" src="assets\logos\hack-at-uci-logo_white.svg" alt="HACK at UCI Logo">
                 <img class="positionCloudFrame" src="assets\backgroundImgs\rightCloudBorder.png" alt="Frame of Clouds">
+                <h4 align="center">Graphics Organizer <br> Spring 2023 - Present </h4>
             </div>
         </div>
         <div class="centerDiv">
             <div class="positionInfoSolo">
-                <center><img class="positionLogo" src="assets\logos\WICS logo (white).svg" alt="ASH Logo"></center>
-                <h5 align="center" >Graphics Designer <br> December 2022 - Present </h5>
-                <img class="positionCloudFrameSolo" src="assets\backgroundImgs\middleCloudBorder.png" alt="Frame of Clouds">
+                <img class="positionLogo" src="assets\logos\WICS logo (white).svg" alt="ASH Logo">
+                <h4 align="center" >Graphics Designer <br> December 2022 - Present </h4>
             </div>
         </div>
         <div class="emptySmall">
@@ -108,5 +108,12 @@
             </div>
         </div>
     </div>
+    <script> 
+        let absoluteDivHeight = document.getElementsByClassName('aboutInfo')[0].offsetHeight;
+        document.getElementsByClassName("blankDiv")[0].style.height = (absoluteDivHeight + 300) + "px";
+        //alert(document.getElementsByClassName("blankDiv")[0].style.height);
+        let positionGridHeight = document.getElementsByClassName('positionGrid')[0].offsetHeight;
+        document.getElementsByClassName("positionInfoSolo")[0].setAttribute("style", "padding-top: " + (positionGridHeight -200)  + "px");
+    </script>
 </body>
 </html>
