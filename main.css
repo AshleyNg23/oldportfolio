@@ -114,7 +114,7 @@ a {
 }
 
 .emptySmall {
-    margin-top: 400px;
+    margin-top: 100px;
 }
 
 .navBar {
@@ -248,9 +248,10 @@ a {
     height: fit-content;
     z-index: 10;
 }
+
 .positionGrid {
     display: grid;
-    grid-template-columns: 40% 40%;
+    grid-template-columns: auto auto;
     grid-column-gap: 10%;
     width: 90%;
     margin: auto;
@@ -260,18 +261,16 @@ a {
 .positionInfo {
     position: relative;
     transition: 0.3s;
-    padding-left: 25%;
-    padding-right: 20%;
 }
 
 .positionLogo {
-    position: absolute;
     max-width: 350px;
     max-height: 350px;
     min-width: 300px;
     min-height: 300px;
     z-index: 20;
-    transition: 0.6s;
+    transition: 1s;
+    width: max-content;
 }
 
 .positionLogo:hover {
@@ -282,7 +281,6 @@ a {
 .positionCloudFrame {
     position: absolute;
     width: 100%;
-    margin-top: 200px;
     z-index: 30;
     transition: 0.3s;
 }
@@ -296,8 +294,6 @@ a {
 .positionInfoSolo {
     position: relative;
     transition: 0.3s;
-    padding-left: 20%;
-    padding-right: 35%;
 }
 
 .positionCloudFrameSolo {
