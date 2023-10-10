@@ -83,6 +83,10 @@ body {
     color:#00000000
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 img {
     width: 100%; /* or any custom size */
     height: 100%; 
